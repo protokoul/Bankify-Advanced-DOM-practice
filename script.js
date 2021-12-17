@@ -244,7 +244,7 @@ const slider = function () {
     if (e.target.classList.contains('dots__dot')) {
       //Object destructuring
       const { slide } = e.target.dataset;
-
+      curSlide = Number.parseInt(slide, 10);
       goToSlide(slide);
       activateDot(slide);
     }
